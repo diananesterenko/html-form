@@ -3,7 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./assets/CSS/reset.css" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <script defer src="./assets/JS/index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h2 class="form-head">Contact form</h2>
+      <p>Please fill in your information and we`ll be sending your order.</p>
+      <form action="" class="contact-form">
+        <label class="form-label" for="">
+          <span for="" class="form-span">Your name</span>
+          <div class="inputs-form">
+            <input
+              type="text"
+              class="form-input"
+              name="user-name"
+              placeholder="first name"
+              minlength="2"
+              maxlength="20"
+              autofocus
+              tabindex="1"
+              pattern="[A-Z][a-z]{2,19}"
+            />
+            <input
+              type="text"
+              class="form-input"
+              name="user-surname"
+              placeholder="last name"
+              minlength="2"
+              maxlength="20"
+              tabindex="2"
+              pattern="[A-Z][a-z]{2,19}"
+            />
+          </div>
+        </label>
+        <label for="" class="form-label">
+          <span class="form-span">Your email</span>
+          <div class="inputs-form">
+            <input
+              type="email"
+              class="form-input"
+              name="user-email"
+              placeholder="your_mail@mail.com"
+              minlength="2"
+              maxlength="20"
+              tabindex="3"
+            />
+          </div>
+        </label>
+        <label for="" class="form-label">
+          <span class="form-span">Phone*</span>
+          <div class="inputs-form">
+            <input
+              type="text"
+              class="form-input"
+              name="user-phone-first"
+              placeholder="000"
+              minlength="3"
+              maxlength="3"
+              required
+              tabindex="4"
+            />
+            <input
+              type="text"
+              class="form-input"
+              name="user-phone-second"
+              placeholder="000"
+              minlength="3"
+              maxlength="3"
+              required
+              tabindex="5"
+            />
+            <input
+              type="text"
+              class="form-input"
+              name="user-phone-third"
+              placeholder="0000"
+              minlength="4"
+              maxlength="4"
+              required
+              tabindex="6"
+            />
+          </div>
+        </label>
+
+        <label for="" class="form-label">
+          <p class="form-span">Message subject*</p>
+          <div class="inputs-form">
+            <select
+              class="form-input"
+              name="user-subject"
+              required
+              tabindex="7"
+            >
+              <option value="value1">Value 1</option>
+              <option value="value2" selected>Value 2</option>
+              <option value="value3">Value 3</option>
+            </select>
+          </div>
+        </label>
+
+        <label for="" class="form-label form-message-label">
+          <span for="" class="form-span">Message*</span>
+          <div class="inputs-form">
+            <textarea
+              class="form-input"
+              name="user-message"
+              rows="6"
+              required
+              tabindex="8"
+              maxlength="100"
+            >
+            </textarea>
+          </div>
+        </label>
+        <span class="underline"></span>
+
+        <button type="submit" class="submit">Submit form</button>
+      </form>
+    </main>
+  </body>
 </html>
